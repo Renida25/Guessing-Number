@@ -1,0 +1,164 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void guess(int N) {
+    int number, guess, numberofguess = 0;
+    srand(time(NULL));
+    number = rand() % N;
+    printf("Guess a number between 1 and %d\n", N);
+
+    do {
+        if (numberofguess > 9) {
+            printf("\nYou Lose! The number was %d.\n", number);
+            break;
+        }
+        printf("Enter your guess: ");
+        scanf("%d", &guess);
+        if (guess > number) {
+            printf("---Wrong---\n");
+            printf("Your guess is high!!\n");
+            numberofguess++;
+        } else if (number > guess) {
+            printf("---Wrong---\n");
+            printf("Your guess is low!!\n");
+            numberofguess++;
+        } else {
+            printf("Congratulations! You guessed the number in %d attempts.\n", numberofguess + 1);
+        }
+    } while (guess != number);
+}
+
+int main() {
+    int N = 100;
+    char choice;
+    do {
+        guess(N);
+        printf("\nDo you want to play again? (y/n): ");
+        scanf(" %c", &choice);
+    } while (choice == 'y' || choice == 'Y');
+    printf("Thank you for playing! Goodbye.\n");
+    return 0;
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void guess(int N) {
+    int number, guess, numberofguess = 0;
+    srand(time(NULL));
+    number = rand() % N;
+    printf("Guess a number between 1 and %d\n", N);
+
+    do {
+        if (numberofguess > 9) {
+            printf("\nYou Lose! The number was %d.\n", number);
+            break;
+        }
+        printf("Enter your guess: ");
+        scanf("%d", &guess);
+        if (guess > number) {
+            printf("---Wrong---\n");
+            printf("Your guess is high!!\n");
+            numberofguess++;
+        } else if (number > guess) {
+            printf("---Wrong---\n");
+            printf("Your guess is low!!\n");
+            numberofguess++;
+        } else {
+            printf("Congratulations! You guessed the number in %d attempts.\n", numberofguess + 1);
+        }
+    } while (guess != number);
+}
+
+int main() {
+    int N = 100;
+    char choice;
+    do {
+        guess(N);
+        printf("\nDo you want to play again? (y/n): ");
+        scanf(" %c", &choice);
+    } while (choice == 'y' || choice == 'Y');
+    printf("Thank you for playing! Goodbye.\n");
+    return 0;
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void guess(int N) {
+    int number, guess, numberofguess = 0;
+    srand(time(NULL));
+    number = rand() % N;
+    printf("Guess a number between 1 and %d\n", N);
+
+    do {
+        if (numberofguess > 9) {
+            printf("\nYou Lose! The number was %d.\n", number);
+            break;
+        }
+        printf("Enter your guess: ");
+        scanf("%d", &guess);
+        if (guess > number) {
+            printf("---Wrong---\n");
+            printf("Your guess is high!!\n");
+            numberofguess++;
+        } else if (number > guess) {
+            printf("---Wrong---\n");
+            printf("Your guess is low!!\n");
+            numberofguess++;
+        } else {
+            printf("Congratulations! You guessed the number in %d attempts.\n", numberofguess + 1);
+        }
+    } while (guess != number);
+}
+
+int main() {
+    int N = 100;
+    char choice;
+    do {
+        guess(N);
+        printf("\nDo you want to play again? (y/n): ");
+        scanf(" %c", &choice);
+    } while (choice == 'y' || choice == 'Y');
+    printf("Thank you for playing! Goodbye.\n");
+    return 0;
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void guess(int N) {
+    int number, guess, numberofguess = 0;
+    srand(time(NULL));
+    number = rand() % N;
+    printf("Guess a number between 1 and %d\n", N);
+
+    do {
+        if (numberofguess > 9) {
+            printf("\nYou Lose! The number was %d.\n", number);
+            break;
+        }
+        printf("Enter your guess: ");
+        scanf("%d", &guess);
+        if (guess > number) {
+            printf("---Wrong---\n");
+            printf("Your guess is high!!\n");
+            numberofguess++;
+        } else if (number > guess) {
+            printf("---Wrong---\n");
+            printf("Your guess is low!!\n");
+            numberofguess++;
+        } else {
+            printf("Congratulations! You guessed the number in %d attempts.\n", numberofguess + 1);
+        }
+    } while (guess != number);
+}
+
+int main() {
+    int N = 100;
+    char choice;
+    do {
+        guess(N);
+        printf("\nDo you want to play again? (y/n): ");
+        scanf(" %c", &choice);
+    } while (choice == 'y' || choice == 'Y');
+    printf("Thank you for playing! Goodbye.\n");
+    return 0;
